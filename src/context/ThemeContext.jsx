@@ -1,5 +1,5 @@
 import { createContext, useEffect, useReducer } from "react";
-import { dezThemeSet } from './ThemeDemo';
+import { dezThemeSet } from "./ThemeDemo";
 import PropTypes from "prop-types";
 
 export const ThemeContext = createContext();
@@ -28,7 +28,6 @@ const initialState = {
 };
 
 const ThemeContextProvider = (props) => {
-
   const [state, dispatch] = useReducer(reducer, initialState);
   const {
     sideBarStyle,
@@ -170,7 +169,7 @@ const ThemeContextProvider = (props) => {
         dispatch({ sidebarLayout: name });
         body.setAttribute("data-layout", name.value);
         //setSideBarStyle({ value: "full", label: "Full" });
-        dispatch({ sideBarStyle: { value: 'full', label: 'Full' } });
+        dispatch({ sideBarStyle: { value: "full", label: "Full" } });
         body.setAttribute("data-sidebar-style", "full");
       } else {
         //setSidebarLayout(name);
@@ -210,11 +209,10 @@ const ThemeContextProvider = (props) => {
   };
 
   const openMenuToggle = () => {
-
     // console.log('sidebar',sideBarStyle)
     sideBarStyle.value === "overly"
       ? dispatch({ menuToggle: true })
-      : dispatch({ menuToggle: false })
+      : dispatch({ menuToggle: false });
   };
 
   const changeBackground = (name) => {
@@ -232,9 +230,7 @@ const ThemeContextProvider = (props) => {
   };
 
   const setDemoTheme = (theme, direction) => {
-
     var setAttr = {};
-
 
     var themeSettings = dezThemeSet[theme];
 
@@ -274,7 +270,6 @@ const ThemeContextProvider = (props) => {
     //setAttr.value = themeSettings.direction;
     setAttr.value = direction;
     changeDirectionLayout(setAttr);
-
   };
 
   useEffect(() => {
@@ -300,8 +295,8 @@ const ThemeContextProvider = (props) => {
       window.innerWidth >= 768 && window.innerWidth < 1024
         ? body.setAttribute("data-sidebar-style", "mini")
         : window.innerWidth <= 768
-          ? body.setAttribute("data-sidebar-style", "overlay")
-          : body.setAttribute("data-sidebar-style", "full");
+        ? body.setAttribute("data-sidebar-style", "overlay")
+        : body.setAttribute("data-sidebar-style", "full");
     };
     resizeWindow();
     window.addEventListener("resize", resizeWindow);

@@ -69,19 +69,23 @@ const UiPopOver = () => {
                       }
                       responsive={true}
                       overlay={
-						 <Tooltip className='toltip-popover'
-								id={`popover-positioned-${placement.toLowerCase()}`}
-							>
-							<h3 className='popover-header'>{`Popover on ${placement}`}</h3> 
-							<strong>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-							</strong>
-						</Tooltip>  
-						  
-                        
+                        <Tooltip
+                          className="toltip-popover"
+                          id={`popover-positioned-${placement.toLowerCase()}`}
+                        >
+                          <h3 className="popover-header">{`Popover on ${placement}`}</h3>
+                          <strong>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor.
+                          </strong>
+                        </Tooltip>
                       }
                     >
-                      <Button variant="primary" size="sm" className="me-2 mt-3 px-4">
+                      <Button
+                        variant="primary"
+                        size="sm"
+                        className="me-2 mt-3 px-4"
+                      >
                         {placement}
                       </Button>
                     </OverlayTrigger>

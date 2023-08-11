@@ -24,11 +24,21 @@ const UiBadge = () => {
             </Card.Header>
             <Card.Body>
               <div className="bootstrap-badge">
-                <Badge bg="" className='badge-primary light badge-xs'>Primary</Badge>
-                <Badge bg="" className='badge-primary light badge-sm'>Primary</Badge>
-                <Badge bg="" className='badge-secondary light'>Secondary</Badge>
-                <Badge bg=" badge-lg " className='badge-danger light'>Danger</Badge>
-                <Badge bg=" badge-xl " className='badge-warning light'>Warning</Badge>
+                <Badge bg="" className="badge-primary light badge-xs">
+                  Primary
+                </Badge>
+                <Badge bg="" className="badge-primary light badge-sm">
+                  Primary
+                </Badge>
+                <Badge bg="" className="badge-secondary light">
+                  Secondary
+                </Badge>
+                <Badge bg=" badge-lg " className="badge-danger light">
+                  Danger
+                </Badge>
+                <Badge bg=" badge-xl " className="badge-warning light">
+                  Warning
+                </Badge>
               </div>
             </Card.Body>
           </Card>
@@ -43,24 +53,56 @@ const UiBadge = () => {
             </Card.Header>
             <Card.Body>
               <div className="bootstrap-badge">
-                <Badge bg="" className='badge-primary light'>Primary</Badge>
-                <Badge bg="" className='badge-secondary light'>Secondary</Badge>
-                <Badge bg="" className='badge-success light'>Success</Badge>
-                <Badge bg="" className='badge-danger light'>Danger</Badge>
-                <Badge bg="" className='badge-warning light'>Warning</Badge>
-                <Badge bg="" className='badge-info light'>Info</Badge>
-                <Badge bg="" className='badge-light light'>Light</Badge>
-                <Badge bg="" className='badge-dark light'>Dark</Badge>
+                <Badge bg="" className="badge-primary light">
+                  Primary
+                </Badge>
+                <Badge bg="" className="badge-secondary light">
+                  Secondary
+                </Badge>
+                <Badge bg="" className="badge-success light">
+                  Success
+                </Badge>
+                <Badge bg="" className="badge-danger light">
+                  Danger
+                </Badge>
+                <Badge bg="" className="badge-warning light">
+                  Warning
+                </Badge>
+                <Badge bg="" className="badge-info light">
+                  Info
+                </Badge>
+                <Badge bg="" className="badge-light light">
+                  Light
+                </Badge>
+                <Badge bg="" className="badge-dark light">
+                  Dark
+                </Badge>
               </div>
               <div className="bootstrap-badge">
-                <Badge bg="" className='badge-primary light'>1</Badge>
-                <Badge bg="" className='badge-secondary light'>2</Badge>
-                <Badge bg="" className='badge-success light'>3</Badge>
-                <Badge bg="" className='badge-danger light'>4</Badge>
-                <Badge bg="" className='badge-warning light'>5</Badge>
-                <Badge bg="" className='badge-info light'>6</Badge>
-                <Badge bg="" className='badge-light light'>7</Badge>
-                <Badge bg="" className='badge-dark light'>8</Badge>
+                <Badge bg="" className="badge-primary light">
+                  1
+                </Badge>
+                <Badge bg="" className="badge-secondary light">
+                  2
+                </Badge>
+                <Badge bg="" className="badge-success light">
+                  3
+                </Badge>
+                <Badge bg="" className="badge-danger light">
+                  4
+                </Badge>
+                <Badge bg="" className="badge-warning light">
+                  5
+                </Badge>
+                <Badge bg="" className="badge-info light">
+                  6
+                </Badge>
+                <Badge bg="" className="badge-light light">
+                  7
+                </Badge>
+                <Badge bg="" className="badge-dark light">
+                  8
+                </Badge>
               </div>
             </Card.Body>
           </Card>
@@ -97,14 +139,30 @@ const UiBadge = () => {
             </Card.Header>
             <Card.Body>
               <div className="bootstrap-badge">
-                <Badge pill bg="primary">Pill badge</Badge>
-                <Badge pill bg="secondary">Pill badge</Badge>
-                <Badge pill bg="success">Pill badge</Badge>
-                <Badge pill bg="danger">Pill badge</Badge>
-                <Badge pill bg="warning">Pill badge</Badge>
-                <Badge pill bg="info">Pill badge</Badge>
-                <Badge pill bg="light">Pill badge</Badge>
-                <Badge pill bg="dark">Pill badge</Badge>
+                <Badge pill bg="primary">
+                  Pill badge
+                </Badge>
+                <Badge pill bg="secondary">
+                  Pill badge
+                </Badge>
+                <Badge pill bg="success">
+                  Pill badge
+                </Badge>
+                <Badge pill bg="danger">
+                  Pill badge
+                </Badge>
+                <Badge pill bg="warning">
+                  Pill badge
+                </Badge>
+                <Badge pill bg="info">
+                  Pill badge
+                </Badge>
+                <Badge pill bg="light">
+                  Pill badge
+                </Badge>
+                <Badge pill bg="dark">
+                  Pill badge
+                </Badge>
               </div>
             </Card.Body>
           </Card>
@@ -120,14 +178,30 @@ const UiBadge = () => {
             </Card.Header>
             <Card.Body>
               <div className="bootstrap-badge">
-                <Badge as="a" href="" bg="primary">Links</Badge>
-                <Badge as="a" href="" bg="secondary">Links</Badge>
-                <Badge as="a" href="" bg="success">Links</Badge>
-                <Badge as="a" href="" bg="danger">Links</Badge>
-                <Badge as="a" href="" bg="warning">Links</Badge>
-                <Badge as="a" href="" bg="info">Links</Badge>
-                <Badge as="a" href="" bg="light">Links</Badge>
-                <Badge as="a" href="" bg="dark">Links</Badge>
+                <Badge as="a" href="" bg="primary">
+                  Links
+                </Badge>
+                <Badge as="a" href="" bg="secondary">
+                  Links
+                </Badge>
+                <Badge as="a" href="" bg="success">
+                  Links
+                </Badge>
+                <Badge as="a" href="" bg="danger">
+                  Links
+                </Badge>
+                <Badge as="a" href="" bg="warning">
+                  Links
+                </Badge>
+                <Badge as="a" href="" bg="info">
+                  Links
+                </Badge>
+                <Badge as="a" href="" bg="light">
+                  Links
+                </Badge>
+                <Badge as="a" href="" bg="dark">
+                  Links
+                </Badge>
               </div>
             </Card.Body>
           </Card>
@@ -189,35 +263,75 @@ const UiBadge = () => {
             </Card.Header>
             <Card.Body>
               <div className="bootstrap-badge">
-                <Badge as="a" href="" bg="badge-rounded" className='badge-outline-primary'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg="badge-rounded"
+                  className="badge-outline-primary"
+                >
                   Rounded
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-rounded" className='badge-outline-secondary'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-rounded"
+                  className="badge-outline-secondary"
+                >
                   Rounded
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-rounded" className='badge-outline-success'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-rounded"
+                  className="badge-outline-success"
+                >
                   Rounded
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-rounded" className='badge-outline-danger'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-rounded"
+                  className="badge-outline-danger"
+                >
                   Rounded
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-rounded" className='badge-outline-warning'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-rounded"
+                  className="badge-outline-warning"
+                >
                   Rounded
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-rounded" className='badge-outline-info'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-rounded"
+                  className="badge-outline-info"
+                >
                   Rounded
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-rounded" className='badge-outline-light'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-rounded"
+                  className="badge-outline-light"
+                >
                   Rounded
                 </Badge>
 
-                <Badge as="a" href="" bg="badge-rounded" className='badge-outline-dark'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg="badge-rounded"
+                  className="badge-outline-dark"
+                >
                   Rounded
                 </Badge>
               </div>
@@ -235,35 +349,75 @@ const UiBadge = () => {
             </Card.Header>
             <Card.Body>
               <div className="bootstrap-badge">
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-primary'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-primary"
+                >
                   1
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-secondary'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-secondary"
+                >
                   2
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-success'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-success"
+                >
                   3
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-danger'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-danger"
+                >
                   4
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-warning'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-warning"
+                >
                   5
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-info'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-info"
+                >
                   6
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-light'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-light"
+                >
                   7
                 </Badge>
 
-                <Badge as="a" href="" bg=" badge-circle" className='badge-outline-dark'>
+                <Badge
+                  as="a"
+                  href=""
+                  bg=" badge-circle"
+                  className="badge-outline-dark"
+                >
                   8
                 </Badge>
               </div>
@@ -327,35 +481,35 @@ const UiBadge = () => {
             </Card.Header>
             <Card.Body>
               <div className="bootstrap-badge">
-                <Badge as="a" href="" bg="" className='badge-outline-primary'>
+                <Badge as="a" href="" bg="" className="badge-outline-primary">
                   1
                 </Badge>
 
-                <Badge as="a" href="" bg="" className='badge-outline-secondary'>
+                <Badge as="a" href="" bg="" className="badge-outline-secondary">
                   2
                 </Badge>
 
-                <Badge as="a" href="" bg="" className='badge-outline-success'>
+                <Badge as="a" href="" bg="" className="badge-outline-success">
                   3
                 </Badge>
 
-                <Badge as="a" href="" bg="" className='badge-outline-danger'>
+                <Badge as="a" href="" bg="" className="badge-outline-danger">
                   4
                 </Badge>
 
-                <Badge as="a" href="" bg="" className='badge-outline-warning'>
+                <Badge as="a" href="" bg="" className="badge-outline-warning">
                   5
                 </Badge>
 
-                <Badge as="a" href="" bg="" className='badge-outline-info'>
+                <Badge as="a" href="" bg="" className="badge-outline-info">
                   6
                 </Badge>
 
-                <Badge as="a" href="" bg="" className='badge-outline-light'>
+                <Badge as="a" href="" bg="" className="badge-outline-light">
                   7
                 </Badge>
 
-                <Badge as="a" href="" bg="" className='badge-outline-dark'>
+                <Badge as="a" href="" bg="" className="badge-outline-dark">
                   8
                 </Badge>
               </div>

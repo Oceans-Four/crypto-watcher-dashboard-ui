@@ -29,7 +29,7 @@ const messageBlog = [
 
 const Inbox = () => {
   const [data, setData] = useState(
-    document.querySelectorAll(".email-right-box .email-list .message")
+    document.querySelectorAll(".email-right-box .email-list .message"),
   );
   const sort = 15;
   const activePag = useRef(0);

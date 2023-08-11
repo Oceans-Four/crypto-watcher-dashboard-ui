@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import PageTitle from "../../layouts/PageTitle";
-import { Row, Col, Card,  Tab, Nav } from "react-bootstrap";
+import { Row, Col, Card, Tab, Nav } from "react-bootstrap";
 
 const UiTab = () => {
   const tabData = [
@@ -118,7 +118,7 @@ const UiTab = () => {
                             Tab {i === 1 ? "Two" : i === 2 ? "Three" : "One"}
                           </Nav.Link>
                         </Nav.Item>
-                      )
+                      ),
                   )}
                 </Nav>
                 <Tab.Content className="">
@@ -129,7 +129,7 @@ const UiTab = () => {
                           <p>{data.content}</p>
                           <p>{data.content}</p>
                         </Tab.Pane>
-                      )
+                      ),
                   )}
                 </Tab.Content>
               </Tab.Container>
@@ -152,7 +152,7 @@ const UiTab = () => {
                             Tab {i === 1 ? "Two" : i === 2 ? "Three" : "One"}
                           </Nav.Link>
                         </Nav.Item>
-                      )
+                      ),
                   )}
                 </Nav>
                 <Tab.Content className="">
@@ -163,7 +163,7 @@ const UiTab = () => {
                           <p>{data.content}</p>
                           <p>{data.content}</p>
                         </Tab.Pane>
-                      )
+                      ),
                   )}
                 </Tab.Content>
               </Tab.Container>
@@ -260,7 +260,7 @@ const UiTab = () => {
                             />
                           </Nav.Link>
                         </Nav.Item>
-                      )
+                      ),
                   )}
                 </Nav>
                 <Tab.Content className="pt-4">
@@ -272,7 +272,7 @@ const UiTab = () => {
                           <p>{data.content}</p>
                           <p>{data.content}</p>
                         </Tab.Pane>
-                      )
+                      ),
                   )}
                 </Tab.Content>
               </Tab.Container>

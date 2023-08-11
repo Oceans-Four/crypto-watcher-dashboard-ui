@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const InboxMessage = () => {
   const [data, setData] = useState(
-    document.querySelectorAll("#patientTable_basic_table tbody tr")
+    document.querySelectorAll("#patientTable_basic_table tbody tr"),
   );
   const sort = 5;
   const activePag = useRef(0);

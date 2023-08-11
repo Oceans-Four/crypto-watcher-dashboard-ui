@@ -14,8 +14,8 @@ const FeesCollection = () => {
   const jobData = useRef(
     data.feeTable.data.slice(
       activePag.current * sort,
-      (activePag.current + 1) * sort
-    )
+      (activePag.current + 1) * sort,
+    ),
   );
   //const [demo, setdemo] = useState();
   const onClick = (i) => {
@@ -23,7 +23,7 @@ const FeesCollection = () => {
 
     jobData.current = data.feeTable.data.slice(
       activePag.current * sort,
-      (activePag.current + 1) * sort
+      (activePag.current + 1) * sort,
     );
     /* setdemo(
       data.feeTable.data.slice(

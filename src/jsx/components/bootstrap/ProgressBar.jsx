@@ -92,7 +92,7 @@ const UiProgressBar = () => {
                       key={i}
                       className="mt-3"
                     />
-                  )
+                  ),
               )}
             </Card.Body>
           </Card>
@@ -118,7 +118,7 @@ const UiProgressBar = () => {
                       className="mt-3"
                       striped
                     />
-                  )
+                  ),
               )}
             </Card.Body>
           </Card>
@@ -151,7 +151,7 @@ const UiProgressBar = () => {
                         variant={data.variant}
                       />
                     </ProgressBar>
-                  )
+                  ),
               )}
             </Card.Body>
           </Card>
@@ -184,7 +184,7 @@ const UiProgressBar = () => {
                         variant={data.variant}
                       />
                     </ProgressBar>
-                  )
+                  ),
               )}
             </Card.Body>
           </Card>
@@ -217,7 +217,7 @@ const UiProgressBar = () => {
                         variant={data.variant}
                       />
                     </ProgressBar>
-                  )
+                  ),
               )}
             </Card.Body>
           </Card>
@@ -241,7 +241,7 @@ const UiProgressBar = () => {
                       key={i}
                       className="mt-3"
                     />
-                  )
+                  ),
               )}{" "}
             </Card.Body>
           </Card>

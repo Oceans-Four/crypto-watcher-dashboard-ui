@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Row, Card, Col, Button, Modal, Container } from "react-bootstrap";
 import PageTitle from "../../layouts/PageTitle";
 
@@ -59,9 +59,7 @@ const UiModal = () => {
                       variant=""
                       className="btn-close"
                       onClick={() => setBasicModal(false)}
-                    >
-                      
-                    </Button>
+                    ></Button>
                   </Modal.Header>
                   <Modal.Body>Modal body text goes here.</Modal.Body>
                   <Modal.Footer>
@@ -91,9 +89,7 @@ const UiModal = () => {
                       variant=""
                       className="btn-close"
                       onClick={() => setContentModal(false)}
-                    >
-                      
-                    </Button>
+                    ></Button>
                   </Modal.Header>
                   <Modal.Body>
                     <p>
@@ -226,9 +222,7 @@ const UiModal = () => {
                       onClick={() => setModalCentered(false)}
                       variant=""
                       className="btn-close"
-                    >
-                      
-                    </Button>
+                    ></Button>
                   </Modal.Header>
                   <Modal.Body>
                     <p>
@@ -265,15 +259,14 @@ const UiModal = () => {
                       variant=""
                       className="btn-close"
                       onClick={() => setModalWithTooltip(false)}
-                    >
-                      
-                    </Button>
+                    ></Button>
                   </Modal.Header>
                   <Modal.Body>
                     <h5>Popover in a modal</h5>
                     <p>
                       This{" "}
-                      <Link to={"#"} 
+                      <Link
+                        to={"#"}
                         role="button"
                         data-container="body"
                         data-toggle="popover"
@@ -288,7 +281,8 @@ const UiModal = () => {
                     <hr />
                     <h5>Tooltips in a modal</h5>
                     <p>
-                      <Link to={"#"}
+                      <Link
+                        to={"#"}
                         className="tooltip-test text-primary"
                         data-toggle="tooltip"
                         title="Told you!"
@@ -296,7 +290,8 @@ const UiModal = () => {
                         This link
                       </Link>{" "}
                       and{" "}
-                      <Link to={"#"}
+                      <Link
+                        to={"#"}
                         className="tooltip-test text-primary"
                         data-toggle="tooltip"
                         title="Another one!"
@@ -333,9 +328,7 @@ const UiModal = () => {
                       variant=""
                       className="btn-close"
                       onClick={() => setGridInsideModal(false)}
-                    >
-                      
-                    </Button>
+                    ></Button>
                   </Modal.Header>
                   <Modal.Body>
                     <Container>
@@ -399,9 +392,7 @@ const UiModal = () => {
                       variant=""
                       className="btn-close"
                       onClick={() => setLargeModal(false)}
-                    >
-                      
-                    </Button>
+                    ></Button>
                   </Modal.Header>
                   <Modal.Body>Modal body text goes here.</Modal.Body>
                   <Modal.Footer>
@@ -440,9 +431,7 @@ const UiModal = () => {
                       variant=""
                       className="btn-close"
                       onClick={() => setSmallModal(false)}
-                    >
-                      
-                    </Button>
+                    ></Button>
                   </Modal.Header>
                   <Modal.Body>Modal body text goes here.</Modal.Body>
                   <Modal.Footer>

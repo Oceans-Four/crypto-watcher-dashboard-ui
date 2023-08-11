@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BasicDatatable = () => {
   const [data, setData] = useState(
-    document.querySelectorAll("#job_data tbody tr")
+    document.querySelectorAll("#job_data tbody tr"),
   );
   const sort = 5;
   const activePag = useRef(0);

@@ -14,8 +14,8 @@ const ProfileDatatable = () => {
   const jobData = useRef(
     data.profileTable.data.slice(
       activePag.current * sort,
-      (activePag.current + 1) * sort
-    )
+      (activePag.current + 1) * sort,
+    ),
   );
   //const [demo, setdemo] = useState();
   const onClick = (i) => {
@@ -23,7 +23,7 @@ const ProfileDatatable = () => {
 
     jobData.current = data.profileTable.data.slice(
       activePag.current * sort,
-      (activePag.current + 1) * sort
+      (activePag.current + 1) * sort,
     );
     /* setdemo(
       data.profileTable.data.slice(

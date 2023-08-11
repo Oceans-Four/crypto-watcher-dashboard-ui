@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { SketchPicker } from "react-color";
 import { GradientPickerPopover } from "react-linear-gradient-picker";
-import 'react-linear-gradient-picker/dist/index.css';
+import "react-linear-gradient-picker/dist/index.css";
 
 const rgbToRgba = (rgb, a = 1) =>
   rgb.replace("rgb(", "rgba(").replace(")", `, ${a})`);
@@ -45,11 +45,8 @@ const Gradient = () => {
       }}
     >
       <WrappedSketchPicker />
-    </GradientPickerPopover >
+    </GradientPickerPopover>
   );
 };
 
 export default Gradient;
-
-
-

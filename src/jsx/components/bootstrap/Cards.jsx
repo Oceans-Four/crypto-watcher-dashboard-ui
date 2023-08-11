@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 /// Compoents
 import PageTitle from "../../layouts/PageTitle";
 
@@ -49,7 +49,7 @@ const UiCards = () => {
               </Card.Text>
             </Card.Body>
             <Card.Footer className="d-sm-flex justify-content-between align-items-center">
-              <div className='card-footer-link mb-4 mb-sm-0'>
+              <div className="card-footer-link mb-4 mb-sm-0">
                 <Card.Text className="text-dark d-inline">
                   Last updated 3 mins ago
                 </Card.Text>
@@ -304,11 +304,7 @@ const UiCards = () => {
         </Col>
         <Col xl="6">
           <Card className="">
-            <img
-              className="card-img-top img-fluid"
-              src={img1}
-              alt="Card cap"
-            />
+            <img className="card-img-top img-fluid" src={img1} alt="Card cap" />
             <Card.Header>
               <Card.Title>Card title</Card.Title>
             </Card.Header>
@@ -326,11 +322,7 @@ const UiCards = () => {
         </Col>
         <Col xl="6">
           <Card className="">
-            <img
-              className="card-img-top img-fluid"
-              src={img2}
-              alt="Card cap"
-            />
+            <img className="card-img-top img-fluid" src={img2} alt="Card cap" />
             <Card.Header>
               <Card.Title>Card title</Card.Title>
             </Card.Header>

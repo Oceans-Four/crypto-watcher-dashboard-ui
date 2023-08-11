@@ -13,7 +13,7 @@ const UiPagination = () => {
     items.push(
       <Pagination.Item key={number} active={number === active}>
         {number}
-      </Pagination.Item>
+      </Pagination.Item>,
     );
   }
   const pag = (size, gutter, variant, bg, circle) => (

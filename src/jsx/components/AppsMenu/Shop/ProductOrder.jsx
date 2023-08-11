@@ -3,66 +3,87 @@ import React, { useEffect } from "react";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function DropdonBlog(){
-  return(
+function DropdonBlog() {
+  return (
     <>
-      <Dropdown className="dropdown text-sans-serif">          
-          <Dropdown.Toggle as="div" variant="" className="i-false">
-            <button className="btn btn-primary i-false tp-btn-light sharp" type="button" id="order-dropdown-0">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg"  width="18px" height="18px" viewBox="0 0 24 24" version="1.1">
-                  <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                    <rect x="0" y="0" width="24" height="24"></rect>
-                    <circle fill="#000000" cx="12" cy="5" r="2"></circle>
-                    <circle fill="#000000" cx="12" cy="12" r="2"></circle>
-                    <circle fill="#000000" cx="12" cy="19" r="2"></circle>
-                  </g>
-                </svg>
-              </span>
-              </button>
-          </Dropdown.Toggle>
-          <Dropdown.Menu className="dropdown-menu dropdown-menu-right border py-0">
-            <div className="py-2">
-              <Link className="dropdown-item" to="/ecom-product-order">Completed</Link>
-              <Link className="dropdown-item" to="/ecom-product-order">Processing</Link>
-              <Link className="dropdown-item" to="/ecom-product-order">On Hold</Link>
-              <Link className="dropdown-item" to="/ecom-product-order">Pending</Link>
-              <div className="dropdown-divider" />
-              <Link className="dropdown-item text-danger" to="/ecom-product-order">Delete</Link>
-            </div>
-          </Dropdown.Menu>
-        </Dropdown>
+      <Dropdown className="dropdown text-sans-serif">
+        <Dropdown.Toggle as="div" variant="" className="i-false">
+          <button
+            className="btn btn-primary i-false tp-btn-light sharp"
+            type="button"
+            id="order-dropdown-0"
+          >
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18px"
+                height="18px"
+                viewBox="0 0 24 24"
+                version="1.1"
+              >
+                <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                  <rect x="0" y="0" width="24" height="24"></rect>
+                  <circle fill="#000000" cx="12" cy="5" r="2"></circle>
+                  <circle fill="#000000" cx="12" cy="12" r="2"></circle>
+                  <circle fill="#000000" cx="12" cy="19" r="2"></circle>
+                </g>
+              </svg>
+            </span>
+          </button>
+        </Dropdown.Toggle>
+        <Dropdown.Menu className="dropdown-menu dropdown-menu-right border py-0">
+          <div className="py-2">
+            <Link className="dropdown-item" to="/ecom-product-order">
+              Completed
+            </Link>
+            <Link className="dropdown-item" to="/ecom-product-order">
+              Processing
+            </Link>
+            <Link className="dropdown-item" to="/ecom-product-order">
+              On Hold
+            </Link>
+            <Link className="dropdown-item" to="/ecom-product-order">
+              Pending
+            </Link>
+            <div className="dropdown-divider" />
+            <Link
+              className="dropdown-item text-danger"
+              to="/ecom-product-order"
+            >
+              Delete
+            </Link>
+          </div>
+        </Dropdown.Menu>
+      </Dropdown>
     </>
-  )
+  );
 }
 
 const ProductOrder = () => {
   const chackboxFun = (type) => {
-    setTimeout(()=>{
+    setTimeout(() => {
       const chackbox = document.querySelectorAll(".product_order");
       const motherChackBox = document.querySelector(".product_order_single");
-      
-        for (let i = 0; i < chackbox.length; i++) {
-          const element = chackbox[i];
-          if (type === "all") {
-            if (motherChackBox.checked) {
-              element.checked = true;
-            } else {
-              element.checked = false;
-            }
+
+      for (let i = 0; i < chackbox.length; i++) {
+        const element = chackbox[i];
+        if (type === "all") {
+          if (motherChackBox.checked) {
+            element.checked = true;
           } else {
-            if (!element.checked) {
-              motherChackBox.checked = false;
-              break;
-            } else {
-              motherChackBox.checked = true;
-            }
+            element.checked = false;
+          }
+        } else {
+          if (!element.checked) {
+            motherChackBox.checked = false;
+            break;
+          } else {
+            motherChackBox.checked = true;
           }
         }
-      
+      }
     }, 100);
   };
-	
 
   return (
     <div className="h-80">
@@ -77,7 +98,12 @@ const ProductOrder = () => {
                     <tr>
                       <th className="align-middle">
                         <div className="form-check custom-checkbox ms-1">
-                          <input type="checkbox" onClick={() => chackboxFun("all")} className="form-check-input  product_order_single" id="checkAll"/>                          
+                          <input
+                            type="checkbox"
+                            onClick={() => chackboxFun("all")}
+                            className="form-check-input  product_order_single"
+                            id="checkAll"
+                          />
                         </div>
                       </th>
                       <th className="align-middle">Order</th>
@@ -92,8 +118,16 @@ const ProductOrder = () => {
                     <tr className="btn-reveal-trigger">
                       <td className="py-2">
                         <div className="form-check custom-checkbox checkbox-success">
-							            <input type="checkbox" onClick={() => chackboxFun()} className="form-check-input product_order" id="checkbox"/>
-                          <label className="form-check-label" htmlFor="checkbox"/>
+                          <input
+                            type="checkbox"
+                            onClick={() => chackboxFun()}
+                            className="form-check-input product_order"
+                            id="checkbox"
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor="checkbox"
+                          />
                         </div>
                       </td>
                       <td className="py-2">
@@ -118,7 +152,7 @@ const ProductOrder = () => {
                       </td>
                       <td className="py-2 text-end">$99</td>
                       <td className="py-2 text-end">
-                          <DropdonBlog />
+                        <DropdonBlog />
                       </td>
                     </tr>
                     <tr className="btn-reveal-trigger">
@@ -519,7 +553,7 @@ const ProductOrder = () => {
                       </td>
                       <td className="py-2 text-end">$69</td>
                       <td className="py-2 text-end">
-                          <DropdonBlog />
+                        <DropdonBlog />
                       </td>
                     </tr>
                     <tr className="btn-reveal-trigger">

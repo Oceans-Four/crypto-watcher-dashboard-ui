@@ -62,7 +62,7 @@ class IntradayChart extends React.Component {
               x: "8:00",
               y: [9300.0, 9700.0],
             },
-            
+
             {
               x: "8:20",
               y: [9300.0, 9600.0],
@@ -71,32 +71,29 @@ class IntradayChart extends React.Component {
               x: "8:30",
               y: [9300.0, 9500.0],
             },
-            
+
             {
               x: "8:45",
               y: [9200.0, 9500.0],
             },
-            
+
             {
               x: "9:00",
               y: [9400.0, 9600.0],
             },
-           
-              
-            {
-                x: "9:30",
-                y: [9200.0, 9500.0],
-            },
-            {
-                x: "9:45",
-                y: [9300.0, 9700.0],
-            },
-            {
-                x: "10:00",
-                y: [9400.0, 9600.0],
-            },
 
-            
+            {
+              x: "9:30",
+              y: [9200.0, 9500.0],
+            },
+            {
+              x: "9:45",
+              y: [9300.0, 9700.0],
+            },
+            {
+              x: "10:00",
+              y: [9400.0, 9600.0],
+            },
           ],
         },
         {
@@ -154,7 +151,7 @@ class IntradayChart extends React.Component {
               x: "8:00",
               y: [9560.0, 9740.0],
             },
-            
+
             {
               x: "8:20",
               y: [9300.0, 9600.0],
@@ -196,19 +193,19 @@ class IntradayChart extends React.Component {
       ],
       options: {
         chart: {
-            type: "rangeBar",
-            height: 270,
-            toolbar: {
-                show: false,
-            },
+          type: "rangeBar",
+          height: 270,
+          toolbar: {
+            show: false,
+          },
         },
         plotOptions: {
-            bar: {
-                horizontal: false,
-                columnWidth: "45%",
-                endingShape: "rounded",
-                startingShape: "rounded",
-            },
+          bar: {
+            horizontal: false,
+            columnWidth: "45%",
+            endingShape: "rounded",
+            startingShape: "rounded",
+          },
         },
         colors: ["#00A389", "#FF3E3E"],
         dataLabels: {
@@ -238,9 +235,9 @@ class IntradayChart extends React.Component {
           colors: ["transparent"],
         },
         grid: {
-            borderColor: "#fbfbfb",
+          borderColor: "#fbfbfb",
         },
-        xaxis: {  
+        xaxis: {
           labels: {
             style: {
               colors: "#787878",
@@ -259,22 +256,22 @@ class IntradayChart extends React.Component {
           labels: {
             offsetX: 0,
             style: {
-                colors: "#787878",
-                fontSize: "12px",
-                fontFamily: "poppins",
-                fontWeight: 100,
-                cssClass: "apexcharts-xaxis-label",
+              colors: "#787878",
+              fontSize: "12px",
+              fontFamily: "poppins",
+              fontWeight: 100,
+              cssClass: "apexcharts-xaxis-label",
             },
           },
         },
         fill: {
-            opacity: 1,
-            colors: ["#00A389", "#FF3E3E"],
+          opacity: 1,
+          colors: ["#00A389", "#FF3E3E"],
         },
         tooltip: {
           y: {
             formatter: function (val) {
-                return "$ " + val + " thousands";
+              return "$ " + val + " thousands";
             },
           },
         },

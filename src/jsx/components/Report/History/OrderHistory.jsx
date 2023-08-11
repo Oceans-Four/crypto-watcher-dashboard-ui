@@ -17,7 +17,7 @@ const tableData = [
 
 const OrderHistory = () => {
   const [data, setData] = useState(
-    document.querySelectorAll("#orderhistory_wrapper tbody tr")
+    document.querySelectorAll("#orderhistory_wrapper tbody tr"),
   );
   const sort = 10;
   const activePag = useRef(0);

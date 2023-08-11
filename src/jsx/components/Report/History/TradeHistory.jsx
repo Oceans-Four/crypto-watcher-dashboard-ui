@@ -17,7 +17,7 @@ const tableData = [
 
 const TradeHistory = () => {
   const [data, setData] = useState(
-    document.querySelectorAll("#tradehistory_wrapper tbody tr")
+    document.querySelectorAll("#tradehistory_wrapper tbody tr"),
   );
   const sort = 10;
   const activePag = useRef(0);
