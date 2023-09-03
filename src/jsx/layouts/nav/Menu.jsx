@@ -139,25 +139,6 @@ export const MenuList = [
         to: "post-details",
       },
       {
-        title: "Email",
-        //to: './',
-        hasMenu: true,
-        content: [
-          {
-            title: "Compose",
-            to: "email-compose",
-          },
-          {
-            title: "Index",
-            to: "email-inbox",
-          },
-          {
-            title: "Read",
-            to: "email-read",
-          },
-        ],
-      },
-      {
         title: "Calendar",
         to: "app-calender",
       },

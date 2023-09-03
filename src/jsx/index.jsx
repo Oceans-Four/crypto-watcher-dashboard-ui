@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 /// React router dom
 import { Routes, Route, Outlet } from "react-router-dom";
@@ -57,9 +57,6 @@ import Theme8 from "./components/Dashboard/Demo/Theme8";
 /// App
 import AppProfile from "./components/AppsMenu/AppProfile/AppProfile";
 import EditProfile from "./components/AppsMenu/AppProfile/EditProfile";
-import Compose from "./components/AppsMenu/Email/Compose/Compose";
-import Inbox from "./components/AppsMenu/Email/Inbox/Inbox";
-import Read from "./components/AppsMenu/Email/Read/Read";
 import Calendar from "./components/AppsMenu/Calendar/Calendar";
 import PostDetails from "./components/AppsMenu/AppProfile/PostDetails";
 
@@ -180,9 +177,6 @@ const Markup = () => {
     /// Apps
     { url: "app-profile", component: <AppProfile /> },
     { url: "edit-profile", component: <EditProfile /> },
-    { url: "email-compose", component: <Compose /> },
-    { url: "email-inbox", component: <Inbox /> },
-    { url: "email-read", component: <Read /> },
     { url: "app-calender", component: <Calendar /> },
     { url: "post-details", component: <PostDetails /> },
 

@@ -106,9 +106,6 @@ const SideBar = () => {
       "app-profile",
       "post-details",
       "app-calender",
-      "email-compose",
-      "email-inbox",
-      "email-read",
       "ecom-product-grid",
       "ecom-product-list",
       "ecom-product-order",
@@ -118,7 +115,6 @@ const SideBar = () => {
       "post-details",
       "ecom-product-detail",
     ],
-    email = ["email-compose", "email-inbox", "email-read"],
     shop = [
       "ecom-product-grid",
       "ecom-product-list",
