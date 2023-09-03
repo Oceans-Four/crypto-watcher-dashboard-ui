@@ -148,18 +148,6 @@ export const MenuList = [
         hasMenu: true,
         content: [
           {
-            title: "Product Grid",
-            to: "ecom-product-grid",
-          },
-          {
-            title: "Product List",
-            to: "ecom-product-list",
-          },
-          {
-            title: "Product Details",
-            to: "ecom-product-detail",
-          },
-          {
             title: "Order",
             to: "ecom-product-order",
           },
