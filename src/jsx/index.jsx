@@ -61,9 +61,6 @@ import Calendar from "./components/AppsMenu/Calendar/Calendar";
 import PostDetails from "./components/AppsMenu/AppProfile/PostDetails";
 
 /// Product List
-import ProductGrid from "./components/AppsMenu/Shop/ProductGrid/ProductGrid";
-import ProductList from "./components/AppsMenu/Shop/ProductList/ProductList";
-import ProductDetail from "./components/AppsMenu/Shop/ProductGrid/ProductDetail";
 import Checkout from "./components/AppsMenu/Shop/Checkout/Checkout";
 import Invoice from "./components/AppsMenu/Shop/Invoice/Invoice";
 import ProductOrder from "./components/AppsMenu/Shop/ProductOrder";
@@ -181,9 +178,6 @@ const Markup = () => {
     { url: "post-details", component: <PostDetails /> },
 
     /// Shop
-    { url: "ecom-product-grid", component: <ProductGrid /> },
-    { url: "ecom-product-list", component: <ProductList /> },
-    { url: "ecom-product-detail", component: <ProductDetail /> },
     { url: "ecom-product-order", component: <ProductOrder /> },
     { url: "ecom-checkout", component: <Checkout /> },
     { url: "ecom-invoice", component: <Invoice /> },
@@ -264,6 +258,7 @@ const Markup = () => {
         <Route path="page-error-400" element={<Error400 />} />
         <Route path="page-error-403" element={<Error403 />} />
         <Route path="page-error-404" element={<Error404 />} />
+        <Route path="*" element={<Error404 />} />
         <Route path="page-error-500" element={<Error500 />} />
         <Route path="page-error-503" element={<Error503 />} />
         <Route element={<MainLayout />}>
