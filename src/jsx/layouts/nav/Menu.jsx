@@ -134,7 +134,7 @@ export const MenuList = [
         title: "Edit Profile",
         to: "edit-profile",
       },
-      {
+{
         title: "Post Details",
         to: "post-details",
       },
@@ -147,18 +147,6 @@ export const MenuList = [
         //to: './',
         hasMenu: true,
         content: [
-          {
-            title: "Product Grid",
-            to: "ecom-product-grid",
-          },
-          {
-            title: "Product List",
-            to: "ecom-product-list",
-          },
-          {
-            title: "Product Details",
-            to: "ecom-product-detail",
-          },
           {
             title: "Order",
             to: "ecom-product-order",
